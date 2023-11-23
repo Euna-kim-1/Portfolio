@@ -1,0 +1,184 @@
+/* 
+This code represents the selected CSS styles.
+Please refer to the comments within the code for more information on each style.
+*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.6em;
+    background: #f4f4f4;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+p {
+    color: rgb(85,85,85);
+}
+
+/* TRANSITION */
+
+/* DESKTOP NAVIGATION */
+
+nav, .nav-links{
+    display: flex;
+}
+
+nav{
+    justify-content: space-around;
+    align-items: center;
+    height: 17vh;
+}
+
+.nav-links{
+    gap: 2rem;
+    list-style: none;
+    font-size: 1.5rem;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+    text-decoration-color: white;
+}
+
+a:hover{
+    color: grey;
+    text-decoration:underline;
+    text-underline-offset: 1rem;
+    text-decoration-color: rgb(181,181,181);
+}
+
+.logo{
+    font-size: 2rem;
+}
+
+.logo:hover{
+    cursor:defalut;
+}
+
+/* MOBILE NAVIGATION */
+
+
+/* SECTIONS */
+section{
+    padding-top: 4vh;
+    height: 96vh;
+    margin: 0 10rem;
+    box-sizing: border-box;
+    min-height: fit-content;
+}
+
+.section-container{
+    display: flex;
+}
+
+/* PROFILE SECTION */
+
+#profile{
+    display:flex;
+    justify-content: center;
+    gap: 5rem;
+    height: 80vh;
+}
+
+.section_profile{
+    display: flex;
+    height: 400px;
+    width: 400px;
+    margin: auto 0; 
+}
+
+.section_text{
+    align-self: center;
+    text-align: center;
+}
+
+.section_text p{
+    font-weight: 600;
+}
+
+.section_text_p1 {
+    text-align: center;
+}
+
+.section_text_p1 {
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+}
+
+.title {
+    font-size: 3rem;
+    text-align: center;
+}
+
+#socials-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    gap: 1rem;
+}
+
+/* ICONS */
+.icon{
+    cursor: pointer;
+    height: 2rem;
+}
+
+/* ABOUT SECTION */
+#about {
+    position: relative;
+}
+
+.about-containers {
+    gap :2rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+.about-details-container{
+    justify-content: center;
+    flex-direction: column;
+}
+
+.about-containers,
+.about-details-container{
+ display: flex;
+}
+
+.about-pic{
+    border-radius: 2rem;
+}
+
+.arrow{
+    position: absolute;
+    right: -5rem;
+    bottom: 2.5rem;
+}
+
+.details-container{
+    padding: 1.5rem;
+    flex:1;
+    background:white;
+    border-radius: 2rem;
+    border: rgb(53,53,53) 0.1rem solid;
+    text-align: center;
+}
+
+.section-container{
+    gap: 5rem;
+    height: 80%;
+}
+
+.section_pic-container{
+    display: flex;
+    height: 400px;
+    width: 400px;
+    margin: auto 0; 
+}
