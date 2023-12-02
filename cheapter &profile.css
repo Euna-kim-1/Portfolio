@@ -47,8 +47,8 @@ nav{
 .nav-links{
   gap: 2rem;
   list-style: none;
-  font-size: 0.9rem;
-  font-weight: bold;
+  font-size: 1rem;
+  font-weight: 600;
 
 }
 a{
@@ -64,9 +64,14 @@ a:hover{
 }
 .logo{
   font-size: 1rem;
+  color: #91A3B0;
+  font-weight: 500;
 }
+
 .logo:hover{
-  cursor:defalut;
+  cursor:default;
+  color: black;
+  font-weight: 600;
 }
 
 /* MOBILE NAVIGATION */
@@ -110,7 +115,8 @@ menu-links a{
   display: block;
   padding: 10px;
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 1rem;
+  font-weight: 500;
   color: black;
   text-decoration: none;
   transition: all 0.3 ease-in-out;
@@ -118,6 +124,9 @@ menu-links a{
 
 .menu-links li {
   list-style: none;
+  font-size: 1rem;
+  font-weight: 500;
+  
 }
 
 .menu-links.open {
@@ -172,16 +181,40 @@ section{
   height: 400px;
   width: 400px;
   margin: auto 0; 
+  animation-name: slideInLeft;
+  animation-duration: 0.6s;
+  animation-timing-function: ease-in;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: both;
+
+  transform: translateX(-150px);
 }
+
+@keyframes slideInLeft{
+  from{
+    transform: translateX(-300px);
+  }
+
+  to{
+    transform: translateX(0);
+  }
+}
+
+
+
 .section_text{
   align-self: center;
   text-align: center;
   width: 400px;
 
 }
+
 /* .section_text p{
   font-weight: 600;
 } */
+
 .section_text_p1 {
   text-align: center;
   margin-bottom: 2rem;
@@ -192,13 +225,17 @@ section{
   margin-bottom: 2rem;
   color: black;
   font-weight: 800; 
- 
+}
+
+.section_text_p3 {
+  margin-top: 2rem;
+  text-align: center;
+  font-weight: 300;
 }
 
 .title {
   font-size: 2rem;
   text-align: center;
-
 }
 
 .btn-container button {
@@ -207,6 +244,8 @@ section{
   border: 2px solid;
   padding: 0.5em 1em;
   font-size: 1em;
+  border-radius: 5rem;
+  margin-right: 0.5rem;
   transition: color 0.15s, border-color 0.15s, box-shadwo 0.15s, transform 0.15s;
 }
 
@@ -230,10 +269,50 @@ section{
 .icon{
   cursor: pointer;
   height: 2rem;
+  margin-left: 0.5rem;
 }
+
+.icon-location{
+  height: 1rem;
+}
+
+.icon-experience{
+  cursor: pointer;
+  height: 1.4rem;
+  margin-left: 0.5rem;
+  margin-top: 0.3rem;
+}
+
+.bounce{
+  height: 2rem;
+  margin-left: 0.5rem;
+  animation-name: bounce;
+  animation-duration: 1s; 
+}
+
+@keyframes bounce{
+  0%, 100% {
+    transform: translateX(0);
+  }
+
+  25% {
+    transform: translateX(-5px);
+  }
+
+  50% {
+    transform: translateX(5px);
+  }
+
+  75% {
+    transform: translateX(-3px);
+  }
+
+}
+
 /* ABOUT SECTION */
 #about {
   position: relative;
+  border-top: 1px solid #708090;
 }
 .about-containers {
   gap :2rem;
@@ -275,16 +354,27 @@ display: flex;
   margin: auto 0; 
 } 
 
+
+
+h3{
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
+
 /* EXPERIENCE SECTION */
 #experience{
   position: relative;
+  border-top: 1px solid #708090;
+  margin-top: 5rem;
 }
 
 .experience-sub-title{
-  color: rgb(85,85,85);
-  font-weight: 600;
-  font-size: 1.75rem;
+  color: #708090;
+  font-weight: 500;
+  font-size: 1.5rem;
   margin-bottom: 2rem;
+  margin-top: 1rem;
 }
 
 .experience-details-container{
@@ -316,6 +406,8 @@ article .icon{
 /* PROJECTS SECTION */
 #projects {
   position: relative;
+  border-top: 1px solid #708090;
+  margin-top: 5rem;
 }
 
 .color-container{
@@ -346,6 +438,9 @@ article .icon{
   justify-content: center;
   flex-direction: column;
   height: 70vh;
+  border-top: 1px solid #708090;
+  margin-top: 5rem;
+  
 }
 
 .contact-info-upper-container{
