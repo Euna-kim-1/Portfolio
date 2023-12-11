@@ -111,11 +111,11 @@ a:hover{
   transition: all 0.3s ease-in-out;
 }
 
-menu-links a{
+.menu-links a{
   display: block;
-  padding: 10px;
+  padding: 0.9px;
   text-align: center;
-  font-size: 1rem;
+  font-size: 0.9rem;
   font-weight: 500;
   color: black;
   text-decoration: none;
@@ -131,6 +131,10 @@ menu-links a{
 
 .menu-links.open {
   max-height: 300px;
+}
+
+.menu-links.open a:hover {
+  color: rgb(181,181,181);
 }
 
 .hamburger-icon.open span:first-child{
@@ -372,7 +376,7 @@ h3{
 .experience-sub-title{
   color: #708090;
   font-weight: 500;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   margin-bottom: 2rem;
   margin-top: 1rem;
 }
@@ -431,6 +435,7 @@ article .icon{
   border-color: rgb(163,163,163);
 }
 
+
 /* CONTACT SECTION */
 
 #contact{
@@ -470,6 +475,7 @@ article .icon{
   cursor: default;
   height: 2rem;
 }
+
 
 /* FOOTER */
 footer{
