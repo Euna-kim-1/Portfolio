@@ -9,5 +9,5 @@ function toggleMenu(){
 document.getElementById('playButton').addEventListener('click', function () {
     var newWindow = window.open('', 'Live Demo', 'width=800, height=600');
 
-    newWindow.document.body.innerHTML = '<video width="100%" height="100%" controls autoplay><source src="videos/taiyang clinic livedemo.mov" type="video/mp4">Your browser does not support the video tag.</video>';
+    newWindow.document.body.innerHTML = '<video width="100%" height="100%" controls autoplay><source src="videos/cliniclivedemo.mp4" type="video/mp4">Your browser does not support the video tag.</video>';
 });
