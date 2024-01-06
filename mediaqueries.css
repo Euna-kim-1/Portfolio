@@ -6,8 +6,11 @@
 
     .about-containers{
         flex-wrap: wrap;
-    }
+    }  
+    
+
 }
+    
 
 @media screen and (max-width : 1200px){
     #desktop-nav{
@@ -51,6 +54,7 @@
     .about-containers {
         margin-top: 0;
     }
+
 }
 
 
@@ -74,6 +78,10 @@
   }
 
   .about-containers{
+    flex-direction: column;
+  }
+
+  .about-containers-2{
     flex-direction: column;
   }
 
